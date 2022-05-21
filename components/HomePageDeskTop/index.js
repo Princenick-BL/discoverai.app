@@ -14,7 +14,7 @@ export default function HomeDeskTop() {
   const [tools,setTools] = useState([
     {
       id : 1,
-      poster :"/gradient.png",
+      poster :"/images/gradient.png",
       title : "CSS Gradient — Generator, Maker, and Background",
       description : "As a free css gradient generator tool, this website lets you create a colorful gradient background for your website, blog, or social media profile.",
       url:"/tool/design/gradient-generator",
@@ -30,7 +30,7 @@ export default function HomeDeskTop() {
     // },
     {
       id: 3,
-      poster :"/tts.png",
+      poster :"/images/tts.png",
       title : "VoxAI - Application based on Watson Text to Speech API",
       description : "Based on IBM WATSON TTS API this application offers an AI that can convert any text into audio. ",
       url:"https://voxai.discoverai.app",
@@ -106,36 +106,13 @@ export default function HomeDeskTop() {
                 "@id":"https://discoverai.app/#organization",
                 "name":"Discover AI",
                 "url":"https://discoverai.app/",
-                "sameAs":[
-                  "https://www.facebook.com/UsWeekly",
-                  "https://instagram.com/usweekly/",
-                  "https://www.youtube.com/user/UsWeekly",
-                  "https://www.pinterest.com/usweekly/",
-                  "https://twitter.com/usweekly"
-                ],
-                "logo":{
-                  "@type":"ImageObject",
-                  "@id":"https://discoverai.app/#logo",
-                  "inLanguage":"en-US",
-                  "url":"https://discoverai.app/wp-content/uploads/2019/10/USWeekly-Logo.png?quality=86&strip=all",
-                  "contentUrl":"https://discoverai.app/wp-content/uploads/2019/10/USWeekly-Logo.png?quality=86&strip=all",
-                  "width":1024,
-                  "height":958,
-                  "caption":"Discover AI"
-                },
-                "image":{
-                  "@id":"https://discoverai.app/#logo"
-                }
               },
               {
                 "@type":"WebSite",
                 "@id":"https://discoverai.app/#website",
                 "url":"https://discoverai.app/",
                 "name":"Discover AI",
-                "description":"Latest Celebrity News, Pictures &amp; Entertainment",
-                "publisher":{
-                  "@id":"https://discoverai.app/#organization"
-                },
+                "description":"Find the tool you need to work faster and more efficiently.",
                 "inLanguage":"en-US"
               },
               {
@@ -143,15 +120,6 @@ export default function HomeDeskTop() {
                 ,"@id":"https://discoverai.app/#webpage",
                 "url":"https://discoverai.app/",
                 "name":"Discover AI",
-                "isPartOf":{
-                  "@id":"https://discoverai.app/#website"
-                },
-                "datePublished":"2017-03-27T21:11:30+00:00",
-                "dateModified":"2022-05-10T19:45:26+00:00",
-                "description":"Get today's top celebrity news, celebrity photos, style tips, exclusive video, and more on UsMagazine.com, the official website of Discover AI.",
-                "breadcrumb":{
-                  "@id":"https://discoverai.app/#breadcrumb"
-                },
                 "inLanguage":"en-US",
                 "potentialAction":[
                   {
@@ -160,22 +128,7 @@ export default function HomeDeskTop() {
                   }
                 ]
               },
-              {
-                "@type":"BreadcrumbList",
-                "@id":"https://discoverai.app/#breadcrumb",
-                "itemListElement":[
-                  {
-                    "@type":"ListItem",
-                    "position":1,
-                    "name":"Home",
-                    "item":"https://discoverai.app/"
-                  },
-                  {
-                    "@type":"ListItem",
-                    "position":2,
-                    "name":"US-2 Home Page"
-                  }]
-                }
+             
               ]
             }
         `}       

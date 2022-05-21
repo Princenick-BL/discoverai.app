@@ -1,0 +1,9 @@
+<?xml version="1.0" standalone="no"?>
+<svg style="transform: scaleX(-1);" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 520">
+    <linearGradient id="MyGradient">
+        <stop offset="20%" stop-color="#079bee" />
+        <stop offset="70%" stop-color="#0829be" />
+        <stop offset="100%" stop-color="#031863" />
+    </linearGradient>
+    <path fill="url(#MyGradient)" fill-opacity="1" d="M0,0L1440,192L1440,520L0,520Z"></path>
+</svg>
