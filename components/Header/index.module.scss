@@ -1,0 +1,78 @@
+.header{
+    .content{
+        //background: rgb(27,21,136);
+        //background: linear-gradient(142deg, rgba(27,21,136,1) 0%, rgba(2,0,36,1) 74%, rgba(156,0,255,1) 100%);
+        display: flex;
+        align-items: center;
+        color: #03001c;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: auto;
+        padding-top: .7rem;
+        padding-bottom: .7rem;
+        //background-color: var(--color-primary-light);
+        .authBtns{
+            display: flex;
+            padding-right: 1rem;
+            color: #03001c;
+            .login{
+                margin-left: 1rem;
+                border-radius: 5px;
+                padding: .2rem 1rem;
+                cursor: pointer;
+            }
+            .signup{
+                color: #fff;
+                background-color: var(--color-primary-light);
+                border: 1px solid var(--color-primary-light);
+                margin-left: 1rem;
+                border-radius: 15px;
+                padding: .2rem 2rem;
+                font-size: .9rem;
+                font-weight: bold;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            :hover{
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            }
+           
+        }
+        
+        .dropdownCaret {
+            display: inline-block;
+            width: 0;
+            height: 0;
+            vertical-align: middle;
+            content: "";
+            border-style: solid;
+            border-width: 4px 4px 0;
+            border-right-color: transparent;
+            border-bottom-color: transparent;
+            border-left-color: transparent;
+            margin-left: 5px;
+            color: #03001c;
+        }
+        .loggedUser{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-right: 1rem;
+            cursor: pointer;
+            .userImg{
+                border: 1px solid #ccc;
+                width: 25px;
+                height: 25px;
+                margin-right: .5rem;
+                border-radius: 50%;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 1rem;
+            }
+        }
+    }
+}

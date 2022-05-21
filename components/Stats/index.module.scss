@@ -1,0 +1,37 @@
+.stats{
+    width: 300px;
+    min-height: 50px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;  
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px; 
+    justify-content: space-between;
+    .likes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span{
+            margin-top: 6px;
+        }
+        svg{
+            width: 20px;
+            height: 20px;
+            fill: #000;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+    }
+    .lastUpdated{
+        margin-left: 2rem;
+        color: #999;
+        font-size: 14px;
+        display: flex;
+        div{
+            margin-left: 5px;
+        }
+    }
+}

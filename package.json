@@ -9,9 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "aos": "^2.3.4",
+    "axios": "^0.27.2",
+    "dotenv": "^16.0.0",
+    "gapi-script": "^1.2.0",
+    "jwt-decode": "^3.1.2",
     "next": "12.1.5",
-    "react": "18.0.0",
-    "react-dom": "18.0.0"
+    "react": "^16",
+    "react-cookie": "^4.1.1",
+    "react-dom": "^16",
+    "react-google-login": "^5.2.2",
+    "react-google-recaptcha": "^2.1.0",
+    "react-login-github": "^1.0.7",
+    "react-oauth2": "^1.1.2",
+    "react-use-cookie": "^1.4.0",
+    "sass": "^1.51.0"
   },
   "devDependencies": {
     "eslint": "8.13.0",

@@ -1,0 +1,35 @@
+.notification{
+    z-index: 30;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    border: 1px solid #ccc;
+    width: 300px;
+    height: max-content;
+    min-height: 30px;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+   
+}
+.Hnotification{
+    z-index: 30;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: max-content;
+    min-height: 50px;
+    background-color: #fff;
+    padding: 1rem;
+    background-color: rgb(51, 190, 9);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nodisplay{
+    display: none;
+}

@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap');
+html,
+body,* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Raleway', sans-serif ;
+  scroll-behavior: smooth !important;  
+  line-height: 1.5;
+}
+
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+body::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar
+{
+    width: 4px;
+    background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: hsl(210deg 8% 98%);
+}
+
+.btn{
+  margin-left: .5rem;
+  margin-right: .5rem;
+  cursor: pointer;
+  border: 1px solid black ;
+  color: black;
+  font: Bold 14px/17px "Adobe Clean",-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
+  pointer-events: all;
+  padding: 7px 22px 7px 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  max-height: 40px;
+}
+
+.rounded{
+  border-radius: 17px !important;
+}
+
+.btn:hover{
+  border: 1px rgb(17, 109, 230) solid !important;
+  color: rgb(17, 109, 230);
+}
+
+.btnFill{
+  background-color: #000;
+  color: #fff !important;
+}
+.btnFill:hover{
+  background-color: rgb(17, 109, 230) !important;
+
+}
+
+:root {
+  --nc-header-shadow : rgba(60,64,67,0.3);
+  --color-primary-light : #004AAD;
+  --color-secondary-light : white;
+  --text-color-primary : #2C2D31;
+}
