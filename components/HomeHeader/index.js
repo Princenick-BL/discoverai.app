@@ -79,7 +79,7 @@ export default function HomeHeader() {
      return(
        window.removeEventListener('resize',changeWidth)
      )
-  },[])
+  },[toggleMenu])
 
 
   return (

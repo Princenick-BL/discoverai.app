@@ -93,7 +93,9 @@ export default function GradientGenerator() {
 
   return (
     <div className={styles.container}>
-      <HomeHeader/>
+      <HomeHeader
+        style={{minWidth : "700px"}}
+      />
       <div className={styles.viewer}>
         <div className={styles.left}>
 

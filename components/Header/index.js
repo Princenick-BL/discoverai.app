@@ -1,4 +1,5 @@
 import React,{useState,Fragment, useMemo, useEffect} from 'react'
+import Head from 'next/head';
 import Logo from '../logo'
 import styles from './index.module.scss'
 import Modal from '../Modal';
@@ -7,7 +8,7 @@ import { useGlobalContext } from '../../GlobalContext';
 import img from '../../public/freeImg.jpg'
 import DropDown from '../DropDown';
 
-export default function Header() {
+export default function Header({style}) {
 
   const [formType,setFormType] = useState(false)
   const {state,dispatch} = useGlobalContext()
@@ -57,15 +58,56 @@ export default function Header() {
 
   },[state])
 
+  const [largeur,setLargeur]=useState(false);
+  const [toggleMenu,setToggleMenu]=useState(false);
+  const showMenu =() =>{
+    setToggleMenu(!toggleMenu);
+  };
+
+
+  useEffect(()=>{
+      setLargeur(window.innerWidth);
+
+      const changeWidth =()=>{
+
+          setLargeur(window.innerWidth);
+
+          if(window.innerWidth > 500){
+              setToggleMenu(false);
+          }
+      }
+      window.addEventListener('resize',changeWidth);
+     return(
+       window.removeEventListener('resize',changeWidth)
+     )
+  },[])
+
+
 
   return (
     <>
-      <header className={styles.header}>
+      <Head>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>  
+      </Head>
+      <header className={styles.header} style={style}>
         <div className={styles.content}>
           <Logo style={{marginLeft:"1rem"}}/>
-          <div>
-            {renderConnectState}
-          </div>
+          {largeur < 500 &&
+            <div>
+              <i style={{fontSize:"30px",marginRight:"20px"}} className="fa fa-bars"  onClick={showMenu}></i>
+              {toggleMenu &&
+                <div className={styles.headerBtns}>
+                  {renderConnectState}
+                </div>
+              }
+            </div>
+          }
+
+          {largeur  > 500 &&
+            <div className={styles.headerBtns}>
+              {renderConnectState}
+            </div>
+          }
 
         </div>
 
