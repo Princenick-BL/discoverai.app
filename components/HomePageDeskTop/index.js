@@ -259,7 +259,7 @@ export default function HomeDeskTop() {
                 <Link  key={index} href={tool.url}>
                     <div className={styles.toolPreview}>
                       <div className={styles.img}>
-                        <Image src={tool.poster} width={300} height={200} alt="tool Img"/>
+                        <Image className={styles.poster} layout='responsive' src={tool.poster} width={300} height={200} alt="tool Img"/>
                       </div>
                       <div className={styles.toolMeta}>
                         <h2>{tool.title}</h2>
