@@ -89,7 +89,7 @@ export default function HomeHeader() {
           <Logo style={{marginLeft:"1rem"}}/>
           {largeur < 500 &&
             <div>
-              <i style={{fontSize:"30px",marginRight:"20px",backgroundColor:"rebeccapurple"}} className="fa fa-bars" git add  onClick={showMenu}></i>
+              <i style={{fontSize:"30px",marginRight:"20px"}} className="fa fa-bars"  onClick={showMenu}></i>
               {toggleMenu &&
                 <div className={styles.headerBtns}>
                   {renderConnectState}
