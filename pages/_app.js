@@ -1,6 +1,6 @@
 import '../styles/globals.scss'
 import 'aos/dist/aos.css';
-import {GlobalProvider} from './GlobalContext'
+import {GlobalProvider} from '../GlobalContext'
 
 
 function MyApp({ Component, pageProps }) {

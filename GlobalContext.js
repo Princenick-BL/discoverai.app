@@ -1,7 +1,7 @@
 import React,{useEffect,useState,useContext} from 'react'
 import { getCookie } from 'react-use-cookie';
 import jwtDecode from 'jwt-decode';
-import { THEME } from '../constant';
+import { THEME } from './constant';
 
 export const GlobalContext = React.createContext();
 

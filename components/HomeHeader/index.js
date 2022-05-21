@@ -3,7 +3,7 @@ import Logo from '../logo'
 import styles from './index.module.scss'
 import Modal from '../Modal';
 import Image from 'next/image';
-import { useGlobalContext } from '../../pages/GlobalContext';
+import { useGlobalContext } from '../../GlobalContext';
 import img from '../../public/freeImg.jpg'
 import DropDown from '../DropDown';
 

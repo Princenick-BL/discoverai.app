@@ -3,7 +3,7 @@ import styles from './index.module.scss'
 import Logo from '../logo';
 import axios from 'axios';
 import Notification from '../Notification';
-import { useGlobalContext } from '../../pages/GlobalContext';
+import { useGlobalContext } from '../../GlobalContext';
 import Head from 'next/head';
 import GoogleLogin from '../Auth.js/googleLogin';
 import { config } from '../../config';
