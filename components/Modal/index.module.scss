@@ -19,7 +19,9 @@
         padding-bottom: 3rem;
         max-height: 90vh;
         padding-left: 2px;
-
+        @media screen and (max-width: 500px) {
+            width: 90%;
+        }
     }
     .box{
         height: 100%;
@@ -41,6 +43,10 @@
             width: 45%;
             margin: auto;
             height: calc( 100% - 60px);
+            @media screen and (max-width: 500px) {
+                margin : 1rem auto;
+                width: 96%;
+            }
             .inputText{
                 background-color: rgb(229 229 229) !important;
                 border: none;
@@ -51,6 +57,10 @@
                 width: 20em;
                 height: 2.85714em;
                 margin-bottom: 1.42857em;
+                @media screen and (max-width: 500px) {
+                    margin : 1rem auto;
+                    width: 90%;
+                }
             }
             .inputPassword{
                 display: flex;
@@ -63,6 +73,10 @@
                 width: 20em;
                 height: 2.85714em;
                 margin-bottom: 1.42857em;
+                @media screen and (max-width: 500px) {
+                    margin : 1rem auto;
+                    width: 90%;
+                }
                 .input{
                     height: 100% !important;
                     border: none;

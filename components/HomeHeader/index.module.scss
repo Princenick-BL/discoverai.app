@@ -12,34 +12,73 @@
         margin: auto;
         padding-top: 2rem;
         //background-color: var(--color-primary-light);
-        .authBtns{
-            display: flex;
-            padding-right: 1rem;
-            color: #03001c;
-            .login{
-                margin-left: 1rem;
-                border-radius: 5px;
-                padding: .2rem 1rem;
-                cursor: pointer;
-            }
-            .signup{
-                color: #fff;
-                background-color: var(--color-primary-light);
-                border: 1px solid var(--color-primary-light);
-                margin-left: 1rem;
-                border-radius: 15px;
-                padding: .2rem 2rem;
-                font-size: .9rem;
-                font-weight: bold;
-                cursor: pointer;
+        
+        .headerBtns{
+            @media screen and (max-width: 500px) {
+                position: absolute;
+                top: 80px;
+                left: 0;
                 display: flex;
+                flex-direction: column;
                 align-items: center;
                 justify-content: center;
+                width: 100%;
             }
-            :hover{
-                box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            .authBtns{
+                display: flex;
+                padding-right: 1rem;
+                color: #03001c;
+                
+                @media screen and (max-width: 500px) {
+                    flex-direction: column;
+                    width: 96% !important;
+                    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                    padding: 1rem;
+                    border-radius: 5px;
+                    background-color: #fff;
+                }
+                .login{
+                    margin-left: 1rem;
+                    border-radius: 5px;
+                    padding: .2rem 1rem;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: 1px solid var(--color-primary-light);
+                    border-radius: 15px;
+
+                    @media screen and (max-width: 500px) {
+                        margin-top: .5rem;
+                        margin-bottom: .5rem;
+                        margin-left: 0;
+                    }
+                }
+                .signup{
+                    color: #fff;
+                    background-color: var(--color-primary-light);
+                    border: 1px solid var(--color-primary-light);
+                    margin-left: 1rem;
+                    border-radius: 15px;
+                    padding: .2rem 2rem;
+                    font-size: .9rem;
+                    font-weight: bold;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    @media screen and (max-width: 500px) {
+                        margin-top: .5rem;
+                        margin-bottom: .5rem;
+                        margin-left: 0;
+                    }
+                }
+                :hover{
+                    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+                }
+               
             }
-           
+    
         }
         
         .dropdownCaret {

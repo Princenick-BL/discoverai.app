@@ -152,12 +152,17 @@
         width: 80%;
         padding: 0 30px;
         margin: 2rem auto;
-
+        @media screen and (max-width: 500px) {
+            width: 96%;
+        }
         .toolPreview{
             display: flex;
             max-width: 1200px;
             cursor: pointer;
             margin-bottom: 3rem;
+            @media screen and (max-width: 500px) {
+                flex-direction: column;
+            }
             .img,.poster{
                 min-width: 300px;
                 background-size: 100%;
@@ -168,14 +173,26 @@
                 border: 1px solid #ccc;
                 border-radius: 5px;
                 overflow: hidden;
+                @media screen and (max-width: 500px) {
+                    margin: 0;
+                }
             }
             .toolMeta{
                 max-width: 600px;
             }
             
         }
+       
         .toolPreview *{
             line-height: 2;
+            
+        }
+
+        h2{
+            @media screen and (max-width: 500px) {
+                line-height: 1.5 !important;
+                margin-top: 1rem;
+            }
         }
     }
 }

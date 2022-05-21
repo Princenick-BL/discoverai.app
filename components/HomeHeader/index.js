@@ -9,6 +9,7 @@ import DropDown from '../DropDown';
 
 export default function HomeHeader() {
 
+
   const [formType,setFormType] = useState(false)
   const {state,dispatch} = useGlobalContext()
   const [renderConnectState,setRenderConnectState]=useState(false)
@@ -56,15 +57,50 @@ export default function HomeHeader() {
 
   },[state])
 
+  const [largeur,setLargeur]=useState(false);
+  const [toggleMenu,setToggleMenu]=useState(false);
+  const showMenu =() =>{
+    setToggleMenu(!toggleMenu);
+  };
+
+
+  useEffect(()=>{
+      setLargeur(window.innerWidth);
+
+      const changeWidth =()=>{
+
+          setLargeur(window.innerWidth);
+
+          if(window.innerWidth > 500){
+              setToggleMenu(false);
+          }
+      }
+      window.addEventListener('resize',changeWidth);
+     
+  },[])
+
 
   return (
     <>
       <header className={styles.header}>
         <div className={styles.content}>
           <Logo style={{marginLeft:"1rem"}}/>
-          <div>
-            {renderConnectState}
-          </div>
+          {largeur < 500 &&
+            <div>
+              <i style={{fontSize:"30px",marginRight:"20px"}} className="fa fa-bars" aria-hidden="true" onClick={showMenu}></i>
+              {toggleMenu &&
+                <div className={styles.headerBtns}>
+                  {renderConnectState}
+                </div>
+              }
+            </div>
+          }
+
+          {largeur  > 500 &&
+            <div className={styles.headerBtns}>
+              {renderConnectState}
+            </div>
+          }
 
         </div>
 
