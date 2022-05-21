@@ -9,7 +9,7 @@ import Link from 'next/link';
 import Footer from '../Footer';
 import { HorizontalNewsLetter } from '../NewsLetter';
 
-export default function index() {
+export default function HomeDeskTop() {
 
   const [tools,setTools] = useState([
     {
