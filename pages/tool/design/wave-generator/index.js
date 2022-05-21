@@ -145,7 +145,7 @@ export default function GradientGenerator() {
                 </clipPath>
               </defs>
           
-              <g  clip-path="url(#shape)">
+              <g  clipPath="url(#shape)">
                 <path fill={colors[0].value} d="M894,634Q819,768,691,814Q563,860,434.5,847.5Q306,835,184.5,747Q63,659,83,507.5Q103,356,205,260.5Q307,165,435.5,150Q564,135,684,190Q804,245,886.5,372.5Q969,500,894,634Z" />
               </g>     
             
