@@ -101,15 +101,10 @@ export default function HomeDeskTop() {
           {
             "@context":"https://schema.org",
             "@graph":[
-              {
-                "@type":"Organization",
-                "@id":"https://discoverai.app/#organization",
-                "name":"Discover AI",
-                "url":"https://discoverai.app/",
-              },
+             
               {
                 "@type":"WebSite",
-                "@id":"https://discoverai.app/#website",
+                "@id":"https://discoverai.app/",
                 "url":"https://discoverai.app/",
                 "name":"Discover AI",
                 "description":"Find the tool you need to work faster and more efficiently.",
@@ -117,9 +112,10 @@ export default function HomeDeskTop() {
               },
               {
                 "@type":"WebPage"
-                ,"@id":"https://discoverai.app/#webpage",
+                ,"@id":"https://discoverai.app/",
                 "url":"https://discoverai.app/",
                 "name":"Discover AI",
+                "description":"Find the tool you need to work faster and more efficiently.",
                 "inLanguage":"en-US",
                 "potentialAction":[
                   {

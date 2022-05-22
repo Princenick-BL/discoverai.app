@@ -5,6 +5,7 @@ import NewsLetter from '../../../../components/NewsLetter'
 import Pub300 from '../../../../components/Pub300'
 import Stats from '../../../../components/Stats'
 import Captcha from '../../../../components/Captcha'
+import Head from 'next/head'
 
 export default function GradientGenerator() {
 
@@ -93,6 +94,58 @@ export default function GradientGenerator() {
 
   return (
     <div className={styles.container}>
+      <Head>
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+        <meta name="theme-color" content="#f8fafb"/>
+        <link rel="icon" href="/favicon.ico" />  
+        <title>Background Gradient Generator</title>
+        <meta name="description" content="This application allows you to generate linear or radial background gradients. Edit, copy and paste and it's done" />
+        <link rel="canonical" href="https://discoverai.app/tool/design/gradient-generator" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:title" content="Background Gradient Generator" />
+        <meta property="og:description" content="This application allows you to generate linear or radial background gradients. Edit, copy and paste and it's done" />
+        <meta property="og:url" content="https://discoverai.app/tool/design/gradient-generator" />
+        <meta property="og:site_name" content="Background Gradient Generator" />
+        <meta property="og:image" content="/gradient.png" />
+
+        {/* <meta property="article:publisher" content="https://www.facebook.com/UsWeekly" />
+        <meta property="article:modified_time" content="2022-05-10T19:45:26+00:00" /> */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Background Gradient Generator" />
+        <meta name="twitter:description" content="This application allows you to generate linear or radial background gradients. Edit, copy and paste and it's done" />
+        <script type="application/ld+json" className="yoast-schema-graph">{`
+          {
+            "@context":"https://schema.org",
+            "@graph":[
+             
+              {
+                "@type":"WebSite",
+                "@id":"https://discoverai.app/tool/design/gradient-generator",
+                "url":"https://discoverai.app/tool/design/gradient-generator",
+                "name":"Background Gradient Generator",
+                "description":"This application allows you to generate linear or radial background gradients. Edit, copy and paste and it's done",
+                "inLanguage":"en-US"
+              },
+              {
+                "@type":"WebPage"
+                ,"@id":"https://discoverai.app/tool/design/gradient-generator",
+                "url":"https://discoverai.app/tool/design/gradient-generator",
+                "name":"Background Gradient Generator",
+                "description":"This application allows you to generate linear or radial background gradients. Edit, copy and paste and it's done",
+                "inLanguage":"en-US",
+                "potentialAction":[
+                  {
+                    "@type":"ReadAction",
+                    "target":["https://discoverai.app/tool/design/gradient-generator"]
+                  }
+                ]
+              },
+             
+              ]
+            }
+        `}       
+        </script>
+      </Head>
       <HomeHeader
         style={{minWidth : "700px"}}
       />
