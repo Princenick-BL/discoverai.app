@@ -79,7 +79,7 @@ export default function HomeHeader() {
      return(
        window.removeEventListener('resize',changeWidth)
      )
-  },[toggleMenu])
+  })
 
 
   return (
@@ -87,7 +87,7 @@ export default function HomeHeader() {
       <header className={styles.header}>
         <div className={styles.content}>
           <Logo style={{marginLeft:"1rem"}}/>
-          {largeur < 500 &&
+          {largeur <= 500 ?(
             <div>
               <i style={{fontSize:"30px",marginRight:"20px"}} className="fa fa-bars"  onClick={showMenu}></i>
               {toggleMenu &&
@@ -95,13 +95,12 @@ export default function HomeHeader() {
                   {renderConnectState}
                 </div>
               }
-            </div>
-          }
+            </div>):(
+              <div className={styles.headerBtns}>
+                {renderConnectState}
+              </div>
 
-          {largeur  > 500 &&
-            <div className={styles.headerBtns}>
-              {renderConnectState}
-            </div>
+            )
           }
 
         </div>
