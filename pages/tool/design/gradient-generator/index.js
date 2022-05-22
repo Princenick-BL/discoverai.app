@@ -1,4 +1,4 @@
-import React ,{useState} from 'react'
+import React ,{useState,useEffect} from 'react'
 import HomeHeader from '../../../../components/Header'
 import styles from './index.module.scss'
 import NewsLetter from '../../../../components/NewsLetter'
