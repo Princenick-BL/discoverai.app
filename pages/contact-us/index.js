@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import Header from '../../components/Header'
 import styles from '../index.module.scss'
 import Footer from '../../components/Footer'
@@ -12,12 +12,12 @@ export default function ContactUs() {
     const [email,setEmail] = useState("")
     const [message,setMessage] = useState("")
     const [notification,setNotification] = useState(false)
-    console.log(process.env)
 
+    
     const handleSubmit = async (e) =>{
         e.preventDefault()
-        console.log(process.env.NEXT_PUBLIC_APP_API_ENDPOINT)
 
+        
         if(process.env.NEXT_PUBLIC_APP_API_ENDPOINT){
             const res = await axios.post(`${process.env.NEXT_PUBLIC_APP_API_ENDPOINT}/contacts`,{
                 firstname : firstName,
@@ -38,7 +38,9 @@ export default function ContactUs() {
             })
         }
     }
-
+    useEffect(()=>{
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      },[])
     return (
         <div className={styles.contactUs}>
             <Notification
@@ -96,11 +98,11 @@ export default function ContactUs() {
                 </div>
             </div>
             <ins className="adsbygoogle"
-            style={{display:"block"}}
-            data-ad-client="ca-pub-5455960452945884"
-            data-ad-slot="5832080832"
-            data-ad-format="auto"
-            data-full-width-responsive="true"></ins>
+                style={{display:"block"}}
+                data-ad-client="ca-pub-5455960452945884"
+                data-ad-slot="5832080832"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
             <Footer/>
         </div>
     )

@@ -81,55 +81,24 @@ export default function HomeDeskTop() {
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
         <meta name="theme-color" content="#f8fafb"/>
         <link rel="icon" href="/favicon.ico" />  
-        <title>Nick's Corp : Dev tools</title>
+        <title>Discover AI : Dev tools</title>
         <meta name="description" content="Find the tool you need to work faster and more efficiently." />
         <link rel="canonical" href="https://discoverai.app" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="article" />
-        <meta property="og:title" content="Nick's Corp : Dev tools" />
+        <meta property="og:title" content="Discover AI : Dev tools" />
         <meta property="og:description" content="Find the tool you need to work faster and more efficiently." />
         <meta property="og:url" content="https://discoverai.app" />
-        <meta property="og:site_name" content="Nick's Corp" />
+        <meta property="og:site_name" content="Discover AI" />
         <meta property="og:image" content="/discoverai.png" />
 
         {/* <meta property="article:publisher" content="https://www.facebook.com/UsWeekly" />
         <meta property="article:modified_time" content="2022-05-10T19:45:26+00:00" /> */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Nick's Corp : Dev tools" />
+        <meta name="twitter:title" content="Discover AI : Dev tools" />
         <meta name="twitter:description" content="Find the tool you need to work faster and more efficiently." />
-        <script type="application/ld+json" className="yoast-schema-graph">{`
-          {
-            "@context":"https://schema.org",
-            "@graph":[
-             
-              {
-                "@type":"WebSite",
-                "@id":"https://discoverai.app/",
-                "url":"https://discoverai.app/",
-                "name":"Nick's Corp",
-                "description":"Find the tool you need to work faster and more efficiently.",
-                "inLanguage":"en-US"
-              },
-              {
-                "@type":"WebPage"
-                ,"@id":"https://discoverai.app/",
-                "url":"https://discoverai.app/",
-                "name":"Nick's Corp",
-                "description":"Find the tool you need to work faster and more efficiently.",
-                "inLanguage":"en-US",
-                "potentialAction":[
-                  {
-                    "@type":"ReadAction",
-                    "target":["https://discoverai.app/"]
-                  }
-                ]
-              },
-             
-              ]
-            }
-        `}       
-        </script>
-     
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5455960452945884"
+     crossOrigin="anonymous"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>  
       </Head>
       <div className={styles.home}>

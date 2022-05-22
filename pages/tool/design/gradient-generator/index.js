@@ -92,6 +92,10 @@ export default function GradientGenerator() {
     
   }
 
+  useEffect(()=>{
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  },[])
+
   return (
     <div className={styles.container}>
       <Head>

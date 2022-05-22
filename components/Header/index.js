@@ -82,10 +82,6 @@ export default function Header({style}) {
      )
   },[])
 
-  useEffect(()=>{
-    (adsbygoogle = window.adsbygoogle || []).push({});
-  },[])
-
 
   return (
     <>
