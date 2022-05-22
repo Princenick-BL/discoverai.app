@@ -174,18 +174,19 @@ export default function HomeDeskTop() {
           {
             tools?.filter(t => t.category === TOOL_CAT.DESIGN)?.map((tool,index)=>{
               return(
-                <Link key={index} href={tool.url}>
+                <Link key={index} href={tool.url} target="_blank">
+                  <a  target="_blank">
+                    <div className={styles.toolPreview}>
+                      <div className={styles.img}>
+                        <Image src={tool.poster} width={300} height={200} alt="tool Img"/>
+                      </div>
+                      <div className={styles.toolMeta}>
+                        <h2>{tool.title}</h2>
+                        <p>{tool.description}</p>
+                      </div>
 
-                  <div className={styles.toolPreview}>
-                    <div className={styles.img}>
-                      <Image src={tool.poster} width={300} height={200} alt="tool Img"/>
                     </div>
-                    <div className={styles.toolMeta}>
-                      <h2>{tool.title}</h2>
-                      <p>{tool.description}</p>
-                    </div>
-
-                  </div>
+                  </a>
                 </Link>
               )
             })
@@ -257,6 +258,7 @@ export default function HomeDeskTop() {
             tools?.filter(t=> t.category === TOOL_CAT.AI)?.map((tool,index)=>{
               return(
                 <Link  key={index} href={tool.url}>
+                  <a  target="_blank">
                     <div className={styles.toolPreview}>
                       <div className={styles.img}>
                         <Image className={styles.poster} layout='responsive' src={tool.poster} width={300} height={200} alt="tool Img"/>
@@ -267,6 +269,7 @@ export default function HomeDeskTop() {
                       </div>
 
                     </div>
+                  </a>
                 </Link>
 
               )
