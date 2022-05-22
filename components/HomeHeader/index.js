@@ -7,7 +7,7 @@ import { useGlobalContext } from '../../GlobalContext';
 import img from '../../public/freeImg.jpg'
 import DropDown from '../DropDown';
 
-export default function HomeHeader() {
+export default function HomeHeader(props) {
 
 
   const [formType,setFormType] = useState(false)
@@ -76,10 +76,10 @@ export default function HomeHeader() {
           }
       }
       window.addEventListener('resize',changeWidth);
-     return(
-       window.removeEventListener('resize',changeWidth)
-     )
-  })
+      return(
+        window.removeEventListener('resize',changeWidth)
+      )
+  },[props])
 
 
   return (
