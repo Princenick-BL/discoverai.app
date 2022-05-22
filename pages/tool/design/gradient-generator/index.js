@@ -271,7 +271,7 @@ export default function GradientGenerator() {
             <Stats/>
           </div>
             <Pub300>
-            <ins class="adsbygoogle"
+            <ins className="adsbygoogle"
             style={{display:"block"}}
             data-ad-client="ca-pub-5455960452945884"
             data-ad-slot="5832080832"
@@ -281,7 +281,7 @@ export default function GradientGenerator() {
         </div>
       </div>
         <div style={{width:"100%"}}>
-          <ins class="adsbygoogle"
+          <ins className="adsbygoogle"
             style={{display:"block"}}
             data-ad-format="autorelaxed"
             data-ad-client="ca-pub-5455960452945884"
