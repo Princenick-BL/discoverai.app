@@ -1,9 +1,9 @@
 import React,{useState} from 'react'
-import Header from '../components/Header'
-import styles from './index.module.scss'
-import Footer from '../components/Footer'
+import Header from '../../components/Header'
+import styles from '../index.module.scss'
+import Footer from '../../components/Footer'
 import axios from 'axios'
-import Notification from '../components/Notification'
+import Notification from '../../components/Notification'
 
 export default function ContactUs() {
 
