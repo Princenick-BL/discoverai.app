@@ -129,6 +129,8 @@ export default function HomeDeskTop() {
             }
         `}       
         </script>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5455960452945884"
+     crossOrigin="anonymous"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>  
       </Head>
       <div className={styles.home}>

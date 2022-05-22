@@ -270,12 +270,23 @@ export default function GradientGenerator() {
             <NewsLetter/>
             <Stats/>
           </div>
-            {/* <Pub300>
-            
-            </Pub300> */}
+            <Pub300>
+            <ins class="adsbygoogle"
+            style={{display:"block"}}
+            data-ad-client="ca-pub-5455960452945884"
+            data-ad-slot="5832080832"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+            </Pub300>
         </div>
-        
       </div>
+        <div style={{width:"100%"}}>
+          <ins class="adsbygoogle"
+            style={{display:"block"}}
+            data-ad-format="autorelaxed"
+            data-ad-client="ca-pub-5455960452945884"
+            data-ad-slot="2461217008"></ins>
+        </div>
       <Captcha/>
     </div>
   )
