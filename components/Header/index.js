@@ -87,8 +87,6 @@ export default function Header({style}) {
     <>
       <Head>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>  
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5455960452945884"
-     crossOrigin="anonymous"></script>
       </Head>
       <header className={styles.header} style={style}>
         <div className={styles.content}>

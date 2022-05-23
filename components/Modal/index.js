@@ -253,7 +253,7 @@ export default function Modal({type,onClose}) {
                                     <Logo style={{color:"var(--color-primary-light)",fontSize:"2em"}}/>
                                 </div>
                                 <br></br>
-                                <div style={{display:"flex",flexDirection:"column",justifyContent:"center",width:"100%"}}>
+                                <div style={{display:"flex",flexDirection:"column",justifyContent:"center",width:"100%",alignItems:"center"}}>
                                     <input className={styles.inputText} type={"text"} placeholder='Identifiant' onChange={(e)=>{setLoginId(e.target.value)}}/>
                                     <div className={styles.inputPassword}>
                                         <input className={styles.input} type={showPass? "text": "password"} placeholder='Mot de pass' onChange={(e)=>{setLoginPwd(e.target.value)}}/>

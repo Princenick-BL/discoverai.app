@@ -249,7 +249,6 @@ export default function HomeDeskTop() {
         
       </div>
 
-      <Captcha/>
       
      
       

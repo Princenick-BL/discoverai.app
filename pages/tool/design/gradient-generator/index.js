@@ -92,9 +92,7 @@ export default function GradientGenerator() {
     
   }
 
-  useEffect(()=>{
-    (adsbygoogle = window.adsbygoogle || []).push({});
-  },[])
+
 
   return (
     <div className={styles.container}>
@@ -117,38 +115,7 @@ export default function GradientGenerator() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Background Gradient Generator" />
         <meta name="twitter:description" content="This application allows you to generate linear or radial background gradients. Edit, copy and paste and it's done" />
-        <script type="application/ld+json" className="yoast-schema-graph">{`
-          {
-            "@context":"https://schema.org",
-            "@graph":[
-             
-              {
-                "@type":"WebSite",
-                "@id":"https://discoverai.app/tool/design/gradient-generator",
-                "url":"https://discoverai.app/tool/design/gradient-generator",
-                "name":"Background Gradient Generator",
-                "description":"This application allows you to generate linear or radial background gradients. Edit, copy and paste and it's done",
-                "inLanguage":"en-US"
-              },
-              {
-                "@type":"WebPage"
-                ,"@id":"https://discoverai.app/tool/design/gradient-generator",
-                "url":"https://discoverai.app/tool/design/gradient-generator",
-                "name":"Background Gradient Generator",
-                "description":"This application allows you to generate linear or radial background gradients. Edit, copy and paste and it's done",
-                "inLanguage":"en-US",
-                "potentialAction":[
-                  {
-                    "@type":"ReadAction",
-                    "target":["https://discoverai.app/tool/design/gradient-generator"]
-                  }
-                ]
-              },
-             
-              ]
-            }
-        `}       
-        </script>
+      
       </Head>
       <HomeHeader
         style={{minWidth : "700px"}}
@@ -274,24 +241,11 @@ export default function GradientGenerator() {
             <NewsLetter/>
             <Stats/>
           </div>
-            <Pub300>
-            <ins className="adsbygoogle"
-            style={{display:"block"}}
-            data-ad-client="ca-pub-5455960452945884"
-            data-ad-slot="5832080832"
-            data-ad-format="auto"
-            data-full-width-responsive="true"></ins>
-            </Pub300>
+           
         </div>
       </div>
-        <div style={{width:"100%"}}>
-          <ins className="adsbygoogle"
-            style={{display:"block"}}
-            data-ad-format="autorelaxed"
-            data-ad-client="ca-pub-5455960452945884"
-            data-ad-slot="2461217008"></ins>
-        </div>
-      <Captcha/>
+        
+     
     </div>
   )
 }
