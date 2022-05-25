@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from 'react'
 import Header from '../../components/Header'
-import styles from '../index.module.scss'
+import styles from './index.module.scss'
 import Footer from '../../components/Footer'
 import axios from 'axios'
 import Notification from '../../components/Notification'
