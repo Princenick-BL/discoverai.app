@@ -1,6 +1,7 @@
 export const TOOL_CAT = {
     AI : "ai",
-    DESIGN : "design"
+    DESIGN : "design",
+    TUTO : "tuto"
 }
 export const THEME = {
     DARK : "dark-theme",

@@ -3,9 +3,12 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from './index.module.scss'
-import {getVoices,generateTTS} from '../../../../services/tts'
+import {getVoices,generateTTS} from '../../../services/tts'
 import { Input,Button,Progress,Spin,notification} from 'antd';
-import {useAsync} from '../../../../hook/useAsync'
+import {useAsync} from '../../../hook/useAsync'
+import Logo from '../../../components/logo'
+import Header from '../../../components/Header'
+
 
 const { TextArea } = Input;
 
@@ -92,14 +95,13 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>VoxAI : Application based on Watson Text to Speech API</title>
+        <title>VoxAI : Example of a text to speach application based on the IBM WATSIN API</title>
         <meta name="description" content="This application offers an AI that can convert any text into audio." />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <meta name="theme-color" content="#1b1588" />
-        <link rel="icon" href="/favicon.ico" />
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5455960452945884"
-        crossOrigin="anonymous"></script>
-
+     crossOrigin="anonymous"></script>
+        <link rel="icon" href="/favicon.ico" />
         {/* Lien font googlr */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -107,7 +109,7 @@ export default function Home() {
         {/* <!-- Facebook Meta Tags --> */}
         <meta property="og:url" content="https://voxai.nickscorp.app/" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="VoxAI : Application based on Watson Text to Speech API" />
+        <meta property="og:title" content="VoxAI : Example of a text to speach application based on the IBM WATSIN API" />
         <meta property="og:description" content="This application offers an AI that can convert any text into audio." />
         <meta property="og:image" content="/images/preview.png" />
 
@@ -115,14 +117,14 @@ export default function Home() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:domain" content="voxai.nickscorp.app" />
         <meta property="twitter:url" content="https://voxai.nickscorp.app/" />
-        <meta name="twitter:title" content="VoxAI : Application based on Watson Text to Speech API" />
+        <meta name="twitter:title" content="VoxAI : Example of a text to speach application based on the IBM WATSIN API" />
         <meta name="twitter:description" content="This application offers an AI that can convert any text into audio." />
         <meta name="twitter:image" content="/images/preview.png" />
 
         {/* <!-- Meta Tags Generated via https://www.opengraph.xyz --> */}
 
       </Head>
-
+      
       <header className={styles.header}>
         <div>The demo version is limited in use,</div>
         <Link href='#'> upgrade to premium.</Link>
@@ -218,8 +220,8 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <div className={styles.logo}>
-          Powered by{' '}
-            Nick's Corp 
+          Powered by{' '}&nbsp; &nbsp; 
+            <Logo/>
           </div>
         </a>
         {/* <script>{ (adsbygoogle = window.adsbygoogle || []).push({})}</script> */}

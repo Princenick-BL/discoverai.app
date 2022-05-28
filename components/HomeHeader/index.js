@@ -6,6 +6,8 @@ import Image from 'next/image';
 import { useGlobalContext } from '../../GlobalContext';
 import img from '../../public/freeImg.jpg'
 import DropDown from '../DropDown';
+import { useGoogleOneTapLogin } from '@react-oauth/google';
+
 
 export default function HomeHeader(props) {
 
@@ -19,6 +21,14 @@ export default function HomeHeader(props) {
       type:"LOGOUT"
     })
   }
+
+
+  useGoogleOneTapLogin({
+    onSuccess: credentialResponse => {
+        console.log(credentialResponse);
+    },
+
+  });
 
   useEffect(()=>{
     if(state.identity){

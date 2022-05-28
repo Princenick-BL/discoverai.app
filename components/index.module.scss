@@ -8,7 +8,10 @@
     display: flex;
     div{
         font-family: 'Orelega One', cursive ;
-
+        clear: both;
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
     }
     .c{
         font-size: 15px;

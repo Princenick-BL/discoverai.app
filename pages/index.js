@@ -7,6 +7,7 @@ import {TOOL_CAT} from '../constant'
 import Link from 'next/link';
 import Footer from '../components/Footer';
 import { HorizontalNewsLetter } from '../components/NewsLetter';
+import { getTutos } from '../services/tutos';
 
 export default function HomeDeskTop() {
 
@@ -14,27 +15,28 @@ export default function HomeDeskTop() {
     {
       id : 1,
       poster :"/images/gradient.png",
-      title : "Background Gradient Generator",
-      description : "This application allows you to generate linear or radial background gradients. Edit, copy and paste and it's done.",
-      url:"/tool/design/gradient-generator",
+      title : "Background Gradient Generator- Online Gradient Generator",
+      description : "This is an online background gradient generator. It allows you to generate linear or radial background gradients. Edit, copy and paste and it's done.",
+      url:"/design/gradient-generator",
       category : "design"
     },
     // {
     //   id: 2,
-    //   poster :"/tts.png",
-    //   title : "VoxAI - Application based on Watson Text to Speech API",
+    //   poster :"/images/gradient.png",
+    //   title : "Box shadow generator - Beautifuf box shadow templates",
     //   description : "Based on IBM WATSON TTS API this application offers an AI that can convert any text into audio. ",
-    //   url:"/tool/design/wave-generator",
+    //   url:"/design/box-shadow-generator",
     //   category : "design"
     // },
     {
       id: 3,
       poster :"/images/tts.png",
-      title : "VoxAI - Application based on Watson Text to Speech API",
-      description : "Based on IBM WATSON TTS API this application offers an AI that can convert any text into audio. ",
-      url:"/tool/ai-techno/text-to-speach-voxai",
+      title : "VoxAI : Example of a text to speach application based on the IBM WATSIN API",
+      description : "This text-to-speech application allows you to transform the text into audio according to the language and the defined voice.",
+      url:"/ai/text-to-speach-voxai",
       category : "ai"
-    }
+    },
+    
   ])
 
   const useReactPath = () => {
@@ -74,6 +76,15 @@ export default function HomeDeskTop() {
 
   }, [path]);
 
+  useEffect(()=>{
+    (async ()=>{
+      const resTuto = await getTutos("tuto");
+      if(resTuto.success){
+        setTools([...tools,...resTuto.data])
+      }
+    })();
+  },[])
+
   return (
     <>
       <Head>
@@ -96,8 +107,6 @@ export default function HomeDeskTop() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Discover AI : Dev tools" />
         <meta name="twitter:description" content="Find the tool you need to work faster and more efficiently." />
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5455960452945884"
-     crossOrigin="anonymous"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>  
       </Head>
       <div className={styles.home}>
@@ -240,6 +249,54 @@ export default function HomeDeskTop() {
               )
             })
           }
+          <br></br>
+          <h3 style={{marginBottom:"-3rem"}}> 
+
+          <svg version="1.1" id="Capa_1" x="0px" y="0px"
+              width="20px" height="20px" viewBox="0 0 696.662 696.663" 
+              >
+            <g>
+              <path d="M56.961,191.577l17.977-6.867l3.409,1.98l-14.731,8.309l-0.337,7.479c-0.006,0-14.225,84.932,1.541,119.941
+                c0,0,26.114,6.882,44.561-12.832L86.559,208.024l-2.389-8.308l31.004-17.036l-0.678,6.455L92.083,204.3l12.618,0.795l152.824,2.784
+                l127.957-83.623l85.145-61.274L209.247,40.19L0,198.47l55.322,3.497L56.961,191.577z M228.317,106.424
+                c15.936-4.567,31.12-0.413,33.917,9.315c2.798,9.714-7.853,21.309-23.781,25.907c-15.928,4.579-31.113,0.413-33.912-9.301
+                C201.737,122.618,212.388,111.022,228.317,106.424z M89.278,303.836l-5.249,1.504c0,0-5.224-27.995-5.512-58.6L89.278,303.836z"/>
+              <path d="M696.662,622.058l-125.14-78.212V243.516H403.649c7.181-10.892,10.025-21.644,7.223-31.383
+                c-0.072-0.27-0.23-0.512-0.311-0.771l-20.559-71.379l-127.952,83.626l-152.823-2.787l12.239,42.514l8.537,29.65
+                c2.767,9.604,10.716,17.107,22.308,22.51v228.354l-125.138,78.21v34.413h669.488V622.058z M287.831,312.978
+                c28.315-8.164,53.579-19.371,73.847-31.921h169.175v226.735H183.596V323.877C212.137,327.469,249.122,324.122,287.831,312.978z
+                M166.682,554.793h390.47l56.604,40.673H110.078L166.682,554.793z"/>
+            </g>
+
+          </svg>
+          &nbsp;Tutos</h3>
+          <br></br>
+          {
+            tools?.filter(t=> t.category === TOOL_CAT.TUTO)?.map((tool,index)=>{
+              return(
+                <Link  key={index} href={"/tuto/"+tool.title.toLocaleLowerCase().replaceAll(" ","-")+"-"+tool.id}>
+                  <a  target="_blank">
+                    <div className={styles.tutoPreview + "  " +((index % 2) === 0 ? " "+styles.selected : " "+styles.notSelected)}>
+                      <div className={styles.img}>
+                        <Image className={styles.poster} layout='responsive' src={tool.poster} width={300} height={200} alt="tool Img"/>
+                      </div>
+                      <div className={styles.toolMeta}>
+                        <h2>{tool.title}</h2>
+                        <p>{tool.description}</p>
+                      </div>
+
+                    </div>
+                  </a>
+                </Link>
+
+              )
+            })
+          }
+          <div className={styles.more}> 
+            <Link href={"/tuto"}>
+              <a>More tutos ?</a>
+            </Link>
+          </div>
           
           <div className={styles.info}>
             <q>

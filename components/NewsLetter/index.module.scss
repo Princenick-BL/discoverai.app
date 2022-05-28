@@ -9,6 +9,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;   
+    @media screen and (max-width: 1000px) {
+        margin-top: 1rem;        
+    }
+   
     .newletterInput{
         border: 1px solid #ccc;
         height: 40px;
@@ -30,6 +34,9 @@
     background:linear-gradient(111deg,#079bee 20%,#0829be 70%,#031863 100%);    
     width: 100%;
     border-radius: 5px;
+    @media screen and (max-width: 700px) {
+        margin-top: 1rem;        
+    }
     .content{
         display: flex;
         justify-content: space-between;

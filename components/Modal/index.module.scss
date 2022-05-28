@@ -98,6 +98,8 @@
                 background: var(--color-primary-light);
                 color: #fff;
                 margin: auto;
+                min-width: 100px;
+                min-height: 30px;
             }
             .footbtn{
                 display: flex;

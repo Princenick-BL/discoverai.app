@@ -207,7 +207,6 @@ export default function Modal({type,onClose}) {
 
     }
 
-    console.log(type)
     
     useEffect(() => {
 
@@ -233,9 +232,7 @@ export default function Modal({type,onClose}) {
       
     return (
         <>
-            <Head>
-                <script src="https://accounts.google.com/gsi/client" async defer></script>
-            </Head>
+       
             <Notification
                 notification={notification}
                 onClose={()=>{setNotification(false)}}
