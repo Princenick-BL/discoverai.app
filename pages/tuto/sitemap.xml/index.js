@@ -21,7 +21,7 @@ export const getServerSideProps = async ({ res }) => {
       http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
       <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
       <url>
-        <loc>https://www.discoverai.app/tuto/nodejs-text-to-speech-api--4</loc>
+        <loc>https://www.discoverai.app/tuto/nodejs-text-to-speech-api-4</loc>
         <lastmod>2022-05-28T00:38:05+00:00</lastmod>
       </url>
       `;
