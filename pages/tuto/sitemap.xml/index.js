@@ -19,10 +19,15 @@ export const getServerSideProps = async ({ res }) => {
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
       http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-      <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
       <url>
         <loc>https://www.discoverai.app/tuto/nodejs-text-to-speech-api-4</loc>
-        <lastmod>2022-05-28T00:38:05+00:00</lastmod>
+        <xhtml:link rel="alternate" hreflang="en-fr" href="https://www.discoverai.app/tuto/nodejs-text-to-speech-api-4" />
+        <xhtml:link rel="alternate" hreflang="en-in" href="https://www.discoverai.app/tuto/nodejs-text-to-speech-api-4" />
+        <xhtml:link rel="alternate" hreflang="en-us" href="https://www.discoverai.app/tuto/nodejs-text-to-speech-api-4" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.discoverai.app/tuto/nodejs-text-to-speech-api-4" />
+        <xhtml:link rel="alternate" hreflang="en-es" href="https://www.discoverai.app/tuto/nodejs-text-to-speech-api-4" />
+        <xhtml:link rel="alternate" hreflang="en-be" href="https://www.discoverai.app/tuto/nodejs-text-to-speech-api-4" />
+        <xhtml:link rel="alternate" hreflang="en-gb" href="https://www.discoverai.app/tuto/nodejs-text-to-speech-api-4" />
       </url>
       `;
 
