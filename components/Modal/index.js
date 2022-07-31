@@ -4,9 +4,9 @@ import Logo from '../logo';
 import axios from 'axios';
 import Notification from '../Notification';
 import { useGlobalContext } from '../../GlobalContext';
+import { config } from '../../config';
 import Head from 'next/head';
 import GoogleLogin from '../Auth.js/googleLogin';
-import { config } from '../../config';
 import GoogleSignUpButton from '../Auth.js/GoogleSignUp';
 
 export default function Modal({type,onClose}) {

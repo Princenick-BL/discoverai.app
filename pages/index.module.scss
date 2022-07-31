@@ -39,14 +39,14 @@
     
     .block1{
         width: 100%;
-        height: calc( 100vh - 50px);
+        height: 80vh;
         min-height: 500px;
-        max-height: 500px;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        background-color: #f8fafb;
+        background-color: #18453b;
         padding: 0 30px ;
+        color: #fff;
         .content{
             margin: auto;
             display: flex;

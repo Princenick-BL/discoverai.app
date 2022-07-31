@@ -89,7 +89,7 @@ export default function HomeDeskTop() {
     <>
       <Head>
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
-        <meta name="theme-color" content="#f8fafb"/>
+        <meta name="theme-color" content="#18453b"/>
         <link rel="icon" href="/favicon.ico" />  
         <title>Discover AI : Dev tools</title>
         <meta name="description" content="Find the tool you need to work faster and more efficiently." />
@@ -158,7 +158,6 @@ export default function HomeDeskTop() {
                         <h2>{tool.title}</h2>
                         <p>{tool.description}</p>
                       </div>
-
                     </div>
                   </a>
                 </Link>
